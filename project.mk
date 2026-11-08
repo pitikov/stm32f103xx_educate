@@ -113,7 +113,7 @@ LD_DEFS						+= -Wl,--defsym=_start=main
 # При наличии скрипта компановщика передаем ему параметры нашего контроллера
 ifeq ($(LD_SCRIPT_EXISTS), true)
 # Размер кучи
-LD_DEFS						+= -Wl,--defsym=__HEAP_SIZE=$(HEAP_SZIE)
+LD_DEFS						+= -Wl,--defsym=__HEAP_SIZE=$(HEAP_SIZE)
 # Размер стека
 LD_DEFS						+= -Wl,--defsym=__STACK_SIZE=$(STACK_SIZE)
 # Адрес начала FLASH_ROM
